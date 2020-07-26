@@ -111,7 +111,6 @@ def print_stations(stations: list):
 
     print(f'{cs_box_tail}\n')
 
-
 # Deauthenticate a client station and sniff EAPOL key frames
 def target_station(station: Station, iface: NetworkInterface, packets: int):
     print_message(
@@ -128,7 +127,6 @@ def target_station(station: Station, iface: NetworkInterface, packets: int):
     station.ap.sniff_handshake(iface)
 
     return True if station.ap.get_handshake() else False
-
 
 # Deauthenticate the broadcast and sniff EAPOL key frames
 def target_broadcast(ap: AccessPoint, iface: NetworkInterface, packets: int):
