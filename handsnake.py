@@ -12,7 +12,7 @@ from scapy.all import get_if_list, wrpcap
 
 
 banner = sys.argv[0].split('/')[-1].split('.')[0] + '''\
- [options] [interface]
+ [options] [iface]
     -h, --help                      this
     -a, --auto                      target all discovered networks
     -b, --broadcast                 target entire networks (no station scanning)
@@ -25,7 +25,7 @@ banner = sys.argv[0].split('/')[-1].split('.')[0] + '''\
     -c, --channels   [int[,int]..]  target channel(s)
 
     * If no [options] are specified, a simple network scan occurs
-    * [interface] must be capable of injecting packets and entering monitor mode
+    * [iface] must be capable of injecting packets and entering monitor mode
 '''
 
 
